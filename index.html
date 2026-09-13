@@ -228,14 +228,14 @@ body {
 <div class="telegram-popup" id="telegramPopup">
     <h2><i class="fa-brands fa-telegram"></i> Support Us!</h2>
     <p>Join our Telegram channel <strong>CricWorld</strong> for instant updates, highlights, and exclusive links.</p>
-    <a href="https://t.me/+6TUeDYwEqx8wZDc1" target="_blank" rel="noopener"><button class="join-btn">Join Now</button></a>
+    <a href="https://t.me/+9eqdUpSA22FmMTFl" target="_blank" rel="noopener"><button class="join-btn">Join Now</button></a>
     <button class="joined-btn" onclick="document.getElementById('telegramPopup').style.display='none';">Already Joined</button>
 </div>
 
 <script>
 async function initializeApp() {
     try {
-        const response = await fetch('https://allrounderid2.pages.dev/id.json');
+        const response = await fetch('https://raw.githubusercontent.com/manojmallah58-source/Cricket-yoddha-json/main/links.json');
         if (!response.ok) throw new Error('Failed to fetch JSON');
         const data = await response.json();
 
@@ -244,7 +244,6 @@ async function initializeApp() {
         const streamData = data.iframes.find(item => item.id === streamId);
 
         if (streamData) {
-            // document.title = `${streamData.name}`; // 🔒 Title stays original (𝗗𝗜𝗟𝗟𝗭𝗬 𝗟𝗜𝗡𝗞𝗦 ™)
             renderIframeUI(streamData);
             setTimeout(() => {
                 document.getElementById('telegramPopup').style.display = 'block';
@@ -270,7 +269,7 @@ function renderIframeUI(data) {
         </div>
         <div class="info-card">
             <h2><i class="fa-solid fa-bell"></i> Follow us for Updates!</h2>
-            <a href="https://t.me/+6TUeDYwEqx8wZDc1" target="_blank" rel="noopener" class="action-button">
+            <a href="https://t.me/+9eqdUpSA22FmMTFl" target="_blank" rel="noopener" class="action-button">
                 <i class="fa-brands fa-telegram"></i> Click Here To Join Telegram
             </a>
         </div>
